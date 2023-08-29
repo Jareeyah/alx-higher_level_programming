@@ -1,11 +1,14 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
+    if (my_list is None or x < 0):
+        return (0)
     s = 0
-    for p in range(x):
-        try:
-            print(my_list[p], end="")
+    try:
+        while (s < x):
+            print("{}".format(my_list[s]), end="")
             s = s + 1
-        except Exception as error:
-            break
+    except IndexError:
         print("")
-        return s
+        return (s)
+    print("")
+    return (s)
