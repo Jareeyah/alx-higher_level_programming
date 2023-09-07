@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    ""'A rectangle class"""
+    """A rectangle class"""
 
     number_of_instances = 0
 
