@@ -2,6 +2,7 @@
 
 """A class MyList that inherits from list"""
 class MyList(list):
+    """class myList interited from list"""
     def __init__(self):
         super().__init__()
 
